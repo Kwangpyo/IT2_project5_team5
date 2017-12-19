@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">S.O.S.</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="Q1">1. 힘 자랑을 위해 타인을 괴롭힘</string>
+    <string name="Q2">2. 폭력을 이기기 위해 상대방에 맞선 폭력 행사</string>
+    <string name="Q3">3. 피해를 볼까봐 친구가 다른 친구가 괴롭힘 당하는 것을 방관</string>
+    <string name="Q4">4. 누군가 나(또는 다른 친구)를 괴롭힐 때 관계가 멀어지는 것이 두려워 참음</string>
+    <string name="Q5">5. 괴롭힘을 당할 때 대처 방법을 모름</string>
+    <string name="Q6">6. 화가 나거나 기분 상할 시 물건을 집어 던짐</string>
+    <string name="Q7">7. 술, 담배, 약물, 미디어를 할 때 타인의 눈을 피함</string>
+    <string name="Q8">8. 화가 나거나 기분 상할 시 욕설  및 고성</string>
+    <string name="Q9">9. 술, 담배, 약물, 미디어를 하지 않을 시 자주 생각남</string>
+    <string name="Q10">10. 기분에 휩싸여 말 및 행동 통제 어려움</string>
+    <string name="Q11">11. 술, 담배, 약물, 미디어를 그만해야 된다는 생각 중에도 계속 하게 됨</string>
+    <string name="Q12">12. 술, 담배, 약물, 미디어를 자신도 모르게 습관적으로 하게 됨</string>
+    <string name="Q13">13. 술, 담배, 약물, 미디어가 내 생활이 방해를 받을 때가 있음</string>
+    <string name="Q14">14. 술, 담배, 약물, 미디어에 인해 가족 및 친구의 지적을 받을 때가 많음</string>
+    <string name="Q15">15. 술, 담배, 약물, 미디어를 한 번 시작하면 시간가는 줄 모름</string>
+    <string name="Q16">16. 술, 담배, 약물, 미디어 중독성이 심함</string>
+    <string name="Q17">17. 술, 담배, 약물, 미디어는 친구와의 사귐에 도움</string>
+    <string name="Q18">18. 술, 담배, 약물, 미디어는 스트레스 해소에 도움이 됨</string>
+    <string name="Q19">19. 기분에 따른 행동 변함</string>
+    <string name="Q20">20. 화가 나거나 기분 상할 시 지나친 표현 및 행동 자제</string>
+    <string name="Q21">21. 기분 및 감정 인식</string>
+    <string name="Q22">22. 민주주의 대비 잘 사는 문제에 대한 우선성</string>
+    <string name="Q23">23. 작은 일에 의한 기분 변화</string>
+    <string name="Q24">24. 기분 및 감정 상태에 대한 주의</string>
+    <string name="Q25">25. 중요한 문제 결정 시 소수에 의한 신속한 처리 선호</string>
+    <string name="Q26">26. 표현의 자유 권리</string>
+    <string name="Q27">27. 직장의 남자 책임자 선호</string>
+    <string name="Q28">28. 불공정한 법에 대한 정치적 항의</string>
+    <string name="Q29">29. 정치지도자 선출 권리</string>
+    <string name="Q30">30. 슬프거나 힘든 일 극복</string>
+    <string name="Q31">31. 어머니는 내게 지적 자극을 많이 주신다.</string>
+    <string name="Q32">32. 아버지의 칭찬과 격려를 많이 받는다</string>
+
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_student_ui">StudentUI</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

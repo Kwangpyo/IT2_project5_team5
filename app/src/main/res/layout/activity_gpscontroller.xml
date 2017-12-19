@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.it2_project.GPSController"
+    android:background="@drawable/background">
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gpscontroller_back"
+        android:textAlignment="center"
+        android:background="@drawable/border"
+        android:src="@drawable/back"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="log out"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/gpscontroller_logout"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gpscontroller_Dec"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:text="신고하기"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:background="@drawable/border_white"
+        android:layout_gravity="center"
+        android:letterSpacing="0.025"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        />
+
+</RelativeLayout>

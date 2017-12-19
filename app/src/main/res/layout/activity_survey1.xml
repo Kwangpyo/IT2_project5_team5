@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/natural_survey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background3"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/survery1_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/border"
+            android:scaleType="fitStart"
+            android:src="@drawable/home"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/survey1_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="log out"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="기회는 일어나는 것이 아니라 만들어내는 것이다."
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/survey1_scrollview"
+        tools:context="com.example.it2_project.SurveyController1"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="10pt"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Q1"
+
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupQ1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/Q1"
+                android:theme="@style/MyRaidoButton"
+                >
+
+                <RadioButton
+                    android:id="@+id/Q1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전혀 그렇지 않다" />
+
+                <RadioButton
+                    android:id="@+id/Q1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="그렇지 않다" />
+                <RadioButton
+                    android:id="@+id/Q1_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="그렇다" />
+
+                <RadioButton
+                    android:id="@+id/Q1_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="매우 그렇다" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:id="@+id/Q2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroup1"
+                android:text="@string/Q2"
+
+                android:textStyle="bold" />
+
+            <RadioGroup
+
+                android:id="@+id/radioGroupQ2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/Q2"
+                android:theme="@style/MyRaidoButton">
+
+                <RadioButton
+                    android:id="@+id/Q2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전혀 그렇지 않다" />
+
+                <RadioButton
+                    android:id="@+id/Q2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="그렇지 않다" />
+
+                <RadioButton
+                    android:id="@+id/Q2_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="그렇다" />
+
+                <RadioButton
+                    android:id="@+id/Q2_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="매우 그렇다" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:id="@+id/Q3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroup2"
+                android:text="@string/Q3"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:theme="@style/MyRaidoButton"
+                android:id="@+id/radioGroupQ3"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Q3">
+
+                <RadioButton
+                    android:id="@+id/Q3_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전혀 그렇지 않다" />
+
+                <RadioButton
+                    android:id="@+id/Q3_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="그렇지 않다" />
+
+                <RadioButton
+                    android:id="@+id/Q3_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="그렇다" />
+
+                <RadioButton
+                    android:id="@+id/Q3_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="매우 그렇다" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:id="@+id/Q4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroup3"
+                android:text="@string/Q4"
+
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:theme="@style/MyRaidoButton"
+                android:orientation="horizontal"
+                android:id="@+id/radioGroupQ4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Q4">
+
+                <RadioButton
+                    android:id="@+id/Q4_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전혀 그렇지 않다" />
+
+                <RadioButton
+                    android:id="@+id/Q4_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="그렇지 않다" />
+
+                <RadioButton
+                    android:id="@+id/Q4_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="그렇다" />
+
+                <RadioButton
+                    android:id="@+id/Q4_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="매우 그렇다" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:id="@+id/Q5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroup4"
+                android:text="@string/Q5"
+
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupQ5"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/MyRaidoButton"
+                android:layout_below="@id/Q5">
+
+                <RadioButton
+                    android:id="@+id/Q5_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전혀 그렇지 않다" />
+
+                <RadioButton
+                    android:id="@+id/Q5_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="그렇지 않다" />
+
+                <RadioButton
+                    android:id="@+id/Q5_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="그렇다" />
+
+                <RadioButton
+                    android:id="@+id/Q5_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="매우 그렇다" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:id="@+id/Q6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Q6"
+
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:theme="@style/MyRaidoButton"
+                android:id="@+id/radioGroupQ6"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Q6">
+
+                <RadioButton
+                    android:id="@+id/Q6_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전혀 그렇지 않다" />
+
+                <RadioButton
+                    android:id="@+id/Q6_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="그렇지 않다" />
+
+                <RadioButton
+                    android:id="@+id/Q6_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="그렇다" />
+
+                <RadioButton
+                    android:id="@+id/Q6_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="매우 그렇다" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:id="@+id/Q7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroup6"
+                android:text="@string/Q7"
+
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:theme="@style/MyRaidoButton"
+                android:id="@+id/radioGroupQ7"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Q7">
+
+                <RadioButton
+                    android:id="@+id/Q7_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전혀 그렇지 않다" />
+
+                <RadioButton
+                    android:id="@+id/Q7_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="그렇지 않다" />
+
+                <RadioButton
+                    android:id="@+id/Q7_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="그렇다" />
+
+                <RadioButton
+                    android:id="@+id/Q7_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="매우 그렇다" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:id="@+id/Q8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroup7"
+                android:text="@string/Q8"
+
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:theme="@style/MyRaidoButton"
+                android:id="@+id/radioGroupQ8"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Q8">
+
+                <RadioButton
+                    android:id="@+id/Q8_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전혀 그렇지 않다" />
+
+                <RadioButton
+                    android:id="@+id/Q8_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="그렇지 않다" />
+
+                <RadioButton
+                    android:id="@+id/Q8_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="그렇다" />
+
+                <RadioButton
+                    android:id="@+id/Q8_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="매우 그렇다" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:id="@+id/Q9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroup8"
+                android:text="@string/Q9"
+
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:theme="@style/MyRaidoButton"
+                android:id="@+id/radioGroupQ9"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Q8">
+
+                <RadioButton
+                    android:id="@+id/Q9_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전혀 그렇지 않다" />
+
+                <RadioButton
+                    android:id="@+id/Q9_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="그렇지 않다" />
+
+                <RadioButton
+                    android:id="@+id/Q9_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="그렇다" />
+
+                <RadioButton
+                    android:id="@+id/Q9_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="매우 그렇다" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:id="@+id/Q10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroup9"
+                android:text="@string/Q10"
+
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:theme="@style/MyRaidoButton"
+                android:id="@+id/radioGroupQ10"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Q9">
+
+                <RadioButton
+                    android:id="@+id/Q10_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전혀 그렇지 않다" />
+
+                <RadioButton
+                    android:id="@+id/Q10_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="그렇지 않다" />
+
+                <RadioButton
+                    android:id="@+id/Q10_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="그렇다" />
+
+                <RadioButton
+                    android:id="@+id/Q10_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="매우 그렇다" />
+
+            </RadioGroup>
+
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/NEXT"
+                android:text="NEXT"
+                android:textSize="16dp"
+                android:textColor="#BDBDBD"
+                android:textAlignment="center"
+                android:background="@drawable/border2"
+                android:layout_gravity="center"
+                android:letterSpacing="0.025"
+                android:padding="10dp"
+                android:layout_marginTop="20dp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
+
+
